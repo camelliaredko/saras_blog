@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sara's Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">Sara's Blog</a></h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="about-me.html">About Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Latest Posts</h2>
+        <article>
+          <h3>My blog</h3>
+          <p>Today I want to start something new...</p>
+        </article>
+        <article>
+          <h3>Hello World!</h3>
+          <p>So, this is it.</p>
+        </article>
+        <article>
+          <h3>HTML Matrix</h3>
+          <p>
+            This is your last chance. After this there is no turning back. You
+            take the <strong>blue pill</strong> - the story ends, you wake up in
+            <em>your <strong>bed</strong></em> sand believe whatever you want to
+            believe. You take the <em>red pill</em> - you stay in
+            <em>Wonderland</em>, and I show you how
+            <strong>deep the <em>rabbit hole</em></strong> goes. Remember, all
+            I'm offering is the truth - nothing more.
+          </p>
+        </article>
+      </section>
+      <aside>
+        <img src="sara.jpg" alt="Portrait of Sara">
+        <h2>Welcome!</h2>
+        <p>My name is Sara, ...
+          This is your last chance. After this there is no turning back. You
+          take the <strong>blue pill</strong> - the story ends, you wake up in
+          <em>your <strong>bed</strong></em> sand believe whatever you want to
+          believe. You take the <em>red pill</em> - you stay in
+          <em>Wonderland</em>, and I show you how
+          <strong>deep the <em>rabbit hole</em></strong> goes. Remember, all
+          I'm offering is the truth - nothing more.
+        </p>
+        <a id="target" href="#">Read more...</a>
+        <p class="hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet lacus vitae mattis porta. Sed facilisis scelerisque metus, nec ultrices ligula posuere in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse placerat ornare metus. Etiam id aliquet diam. Nam varius orci at enim fringilla blandit. Nam iaculis egestas faucibus. Donec eget pulvinar ante. In id venenatis lacus, vitae elementum augue. Suspendisse potenti.
+
+          Praesent luctus sit amet lectus ac ultricies. Vivamus ut dictum tortor, at pharetra lorem. Curabitur aliquam, odio eget finibus cursus, leo neque fermentum nisl, at viverra urna leo vitae nisl. Aenean in vehicula sem, nec consequat ipsum. Donec at rutrum lectus. Praesent porttitor aliquam ipsum sit amet ornare. Fusce lobortis ex sed magna elementum tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          
+          Nulla tempor enim id diam posuere porttitor in eu metus. Nunc ac elementum ex. Proin at elementum enim, ut porttitor libero. Nam et convallis libero. Proin et lacus ac ligula fermentum semper in elementum sapien. Pellentesque sagittis, mi vitae iaculis facilisis, velit velit porttitor sem, at tempus ligula metus a libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet a neque eu tempor. Phasellus venenatis nunc eget diam fringilla dictum. Sed hendrerit dapibus dui eget dignissim. Curabitur nec libero leo. Mauris pharetra eleifend tincidunt. Sed sit amet sem non dui tristique malesuada.
+          
+          Donec laoreet, erat eu mattis consequat, lorem enim lobortis enim, interdum elementum orci massa ut risus. Fusce magna arcu, aliquam nec gravida at, rhoncus vitae justo. Donec neque nulla, pellentesque vitae placerat eget, aliquam et erat. Pellentesque quis congue neque. Fusce facilisis ex nec sem luctus, a pretium ipsum maximus. Donec imperdiet turpis sed leo mattis rhoncus. Aliquam sagittis purus nec tortor venenatis tempus. Maecenas ut massa molestie, semper tellus aliquet, vehicula sem. Fusce rutrum neque sit amet nisl sagittis, volutpat semper dui semper. Mauris in pretium tellus. Sed eget enim congue, mollis eros id, ullamcorper massa. Ut nec ligula vulputate, mattis dui et, feugiat augue. Curabitur egestas pretium metus, in rutrum mi porta eu. Maecenas dapibus risus rhoncus diam vestibulum viverra.
+          
+          Aliquam erat volutpat. Vivamus euismod ipsum libero, eget posuere elit tincidunt efficitur. Vivamus sagittis condimentum urna, eget lacinia purus bibendum ac. Ut leo dolor, porttitor sit amet orci eu, efficitur ultricies orci. Proin tempor, ex et blandit sollicitudin, augue neque convallis lectus, ac iaculis velit velit at neque. Aenean in blandit est. Praesent ipsum lectus, fringilla et quam eget, faucibus rhoncus odio.</p>
+      </aside>
+    </main>
+    <footer>
+      <p>&copy; S. Miller</p>
+      <nav>
+        <ul>
+          <li><a href="imprint">Imprint</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <!-- <script src="script-2.js"></script> -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        console.log("test");
+        // const myElement = document.getElementByID("main");
+        // myElement.addEventListener("click", function() {
+        //   console.log("clicked");
+        // });
+
+        const link = document.getElementById("target");
+        // const link = document.querySelector("#target");  // works like line above
+        const hiddenP = document.querySelector(".hidden");
+        // const hiddenP = document.querySelector("p.hidden");
+        // const hiddenP = document.querySelectorAll("hidden");
+
+        console.log(event);
+        console.log(link);
+        console.log(hiddenP);
+        // console.log(hiddenP[1]); // targets second hiddenP if you use const hiddenP = document.querySelectorAll(".hidden");
+        
+        link.addEventListener("click", function(event) {
+          // hiddenP.removeAttribute("id");
+          hiddenP.classList.remove("hidden");
+          // link.setAttribute("id", "hidden");
+          link.classList.add("hidden");
+          event.preventDefault() // page doesn't jump to top after clicking "Read more ..." by adding this as well as "event" in function(event)
+        });
+      });
+    </script>
+  </body>
+</html>
+
+<!-- 
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>My first website</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <br />
+    <p>This is my first website!</p>
+    <script src="main.js"></script>
+  </body>
+</html>
+ -->
